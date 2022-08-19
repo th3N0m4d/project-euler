@@ -1,7 +1,11 @@
 export function makeNumberSequence(length) {
-  return Array.from({ length: length - 1 }, (_, i) => i + 1);
+  return Array.from({ length: length }, (_, i) => i + 1);
 }
 
 export function sum(previous, current) {
   return previous + current;
+}
+
+export function isEven(n) {
+  return n % 2 === 0;
 }

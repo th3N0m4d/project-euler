@@ -8,7 +8,7 @@ describe("Multiples of 3 or 5", () => {
   `(
     "Should output $expectedResult for numbers below $limit",
     ({ limit, expectedResult }) => {
-      const result = calculateMultipleOfThreeAndFive(limit);
+      const result = calculateMultipleOfThreeAndFive(limit - 1);
 
       expect(result).toBe(expectedResult);
     }
