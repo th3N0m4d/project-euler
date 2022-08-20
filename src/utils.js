@@ -9,3 +9,7 @@ export function sum(previous, current) {
 export function isEven(n) {
   return n % 2 === 0;
 }
+
+export function isMultiple(a, b) {
+  return a % b === 0;
+}
