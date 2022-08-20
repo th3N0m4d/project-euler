@@ -1,14 +1,7 @@
-import { sum, makeNumberSequence } from "../utils";
-
-function isMultiple(a, b) {
-  return a % b === 0;
-}
+import { sum, makeNumberSequence, isMultiple } from "../utils";
 
 function isMultipleOfThreeOrFive(n) {
-  const a = 3;
-  const b = 5;
-
-  return isMultiple(n, a) || isMultiple(n, b);
+  return isMultiple(n, 3) || isMultiple(n, 5);
 }
 
 export function calculateMultipleOfThreeAndFive(n) {

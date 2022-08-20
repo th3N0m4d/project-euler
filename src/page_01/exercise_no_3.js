@@ -2,6 +2,8 @@
  * Largest prime factor
  */
 
+import { isMultiple } from "../utils";
+
 export function isPrime(n) {
   const { length } = findPrimeNumbers(n);
 
@@ -13,7 +15,7 @@ export function findPrimeNumbers(n) {
   let factor = 1;
 
   while (factor <= n) {
-    if (n % factor === 0) {
+    if (isMultiple(n, factor)) {
       primeFactors.push(factor);
     }
 
